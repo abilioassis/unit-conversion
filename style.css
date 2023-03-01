@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background: greenyellow;
+}
+
+main {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+/* Remove Arrows/Spinners on Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove Arrows/Spinners on Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#section-a {
+  background: #6943ff;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  text-align: center;
+}
+
+#quantity {
+  width: 25%;
+  font-size: 4.5rem;
+  text-align: center;
+  font-weight: 800;
+  color: white;
+  background: #6943ff;
+  border: 2px solid #b295ff;
+  border-radius: 5px;
+  outline: none;
+  padding: 10px;
+}
+
+#convert-btn {
+  width: 25%;
+  background: #ffffff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  border: none;
+  padding: 10px 20px;
+  color: #3d3d3d;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+#section-b {
+  background: #1f2937;
+  padding: 20px;
+}
+
+#section-b .container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#section-b .unit-conversion {
+  padding: 20px;
+  background: #273549;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.unit-conversion h2 {
+  color: #ccc1ff;
+}
+
+.unit-conversion p {
+  color: white;
+  margin-top: 10px;
+}
