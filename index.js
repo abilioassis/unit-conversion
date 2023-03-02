@@ -2,6 +2,7 @@
  * DOM variables
  */
 const qtyElm = document.getElementById("qty");
+qtyElm.value = "1";
 const convertBtn = document.getElementById("convert-btn");
 // Length (Meter/Feet)
 const mValElm = document.getElementById("m-val");
