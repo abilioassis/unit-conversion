@@ -18,8 +18,7 @@ const kgValElm = document.getElementById("kg");
 const lbValElm = document.getElementById("lb");
 
 // Convert Button
-const convertBtn = document.getElementById("convert-btn");
-convertBtn.addEventListener("click", function () {
+document.getElementById("convert-btn").addEventListener("click", function () {
   renderValues(qtyElm);
 });
 
@@ -28,7 +27,7 @@ convertBtn.addEventListener("click", function () {
  * Converts the amount provided by the user and writes the converted values on the screen.
  */
 function renderValues(qtyElement) {
-  const qty = qtyElement.value;
+  const qty = Number(qtyElement.value);
 
   // Length (Meter/Feet)
   mValElm.innerHTML = `${qty} meters = ${converter(qty, "m", "ft")} feet`;
@@ -47,7 +46,7 @@ function renderValues(qtyElement) {
  * (Number, String, String) -> String
  * Converts a number from one unit to another with precision to 3 decimal places
  */
-function converter(n, from, to) {
+function converter(num, from, to) {
   let k = 0;
   if (from === "m" && to === "ft") {
     k = 3.280839895;
@@ -62,6 +61,6 @@ function converter(n, from, to) {
   } else {
     k = 1 / 2.20462262185;
   }
-  const result = n * k;
+  const result = k * num;
   return result.toFixed(3);
 }
