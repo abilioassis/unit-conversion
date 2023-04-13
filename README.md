@@ -10,7 +10,7 @@ This is a solution to the [M3 - Unit Conversion](https://scrimba.com/learn/front
 
 - Live Site: [Netlify](https://enchanting-tiramisu-9ea6b5.netlify.app/)
 - Codebase: [Github](https://github.com/abilioassis/unit-conversion)
-- Code review: [Scrimba]()
+- Code review: [Scrimba](https://scrimba.com/scrim/co5bb4388a49c162f82e22e6f)
 
 ## Built with
 
